@@ -10,17 +10,16 @@ import java.net.URL;
 public class tryREST {
 
     public static void main(String[] args) {
-        String urlStr=new String("http://thronesdb.com/api/public/card/01001");
+        String sb=new String();
+        String urlStr=new String();
+
+        urlStr="http://thronesdb.com/api/public/card/01091";
         try {
-            String sb=httpGet(urlStr);
-            System.out.println(sb);
+            sb=httpGet(urlStr);
         }
-        catch (IOException netError){
+        catch (IOException netError){}
 
-        }
-
-
-
+        System.out.println(sb);
     }
 
     public static String httpGet(String urlStr) throws IOException {
